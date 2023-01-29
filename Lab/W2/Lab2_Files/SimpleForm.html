@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>first example</title>
+  <meta name="viewport" content="width=device-width, initial scale=1.0"> 
+</head>
+
+<body>
+  <h2 style="font-size:4vw;">HTML Forms Exercise</h2>
+
+  <form method="Get" action="login.php">
+    <p style="font-size:2vw;">
+
+      <label>Name:
+
+        <input name="name" type="text" size="25" placeholder="default text" required />
+
+      </label>
+
+    </p>
+
+    <!-- <textarea> creates a multiline textbox -->
+
+    <p style="font-size:2vw;"><label>Comments:
+
+        <textarea name="comments" rows="4" cols="36">Enter comments here</textarea>
+
+      </label></p>
+
+    <!-- <input type = "password"> inserts a textbox with asterisk characters -->
+
+    <p style="font-size:2vw;"><label>E-mail Address:
+
+        <input name="email" type="password" size="25">
+
+      </label></p>
+
+
+
+
+    <fieldset name="about">
+      <legend>About Your Course</legend>
+
+      <p style="font-size:2vw;">
+
+        <strong>Things you liked: </strong>
+
+      <table>
+        <tr>
+          <td><label>Site design <input name="thingsliked" type="checkbox" value="Design"></label></td>
+
+          <td><label>Links <input name="thingsliked" type="checkbox" value="Links"></label></td>
+        </tr>
+
+        <tr>
+          <td><label>Ease of use <input name="thingsliked" type="checkbox" value="Ease"></label></td>
+
+          <td><label>Images <input name="thingsliked" type="checkbox" value="Images" checked></label> </td>
+        </tr>
+
+        <tr>
+          <td><label>Source code <input name="thingsliked" type="checkbox" value="Code" checked></label></td>
+          <td>
+            <label>Teacher <input name="thingsliked" type="checkbox" value="Code"></label>
+          </td>
+        </tr>
+      </table>
+      </p>
+
+
+    </fieldset>
+
+    <!-- <input type = "radio"> creates a radio -->
+  <fieldset style="background-color: #eeeeee;"><legend style="font-weight: bold;">Our site: </legend>
+    <p style="font-size:2vw;">
+      <strong>How did you get to our site?:</strong>
+      <table>
+      <tr><td><label>Search engine <input name="hoetosite" type="radio" value="search engine" checked></label></td>
+
+        <td><label>Links from another site <input name="hoetosite" type="radio" value="link"></label></td>
+        <td><label>Links from another site <input name="hoetosite" type="radio" value="link"></label></td>
+
+        <td><label>deitel.com Web site <input name="hoetosite" type="radio" value="deitel.com"></label></td>
+
+        <td><label>Refence in a book <input name="hoetosite" type="radio" value="book"></label></td>
+
+        <td><label>Other <input name="hoetosite" type="radio" value="other"></label></tr>
+    </table>
+    </p>
+
+  </fieldset>
+    <p style="font-size:2vw;">
+      <label>Rate our site:
+
+        <!-- the <select> tag presents a drop-down list with choices indicated by the <option> tags -->
+
+        <select name="rating">
+
+          <option>Amazing</option>
+          <option>10</option>
+          <option>9</option>
+          <option>8</option>
+          <option selected>7</option>
+          <option>6</option>
+          <option>5</option>
+          <option>4</option>
+          <option>3</option>
+          <option>2</option>
+          <option>1</option>
+          <option>Awful</option>
+        </select>
+      </label>
+    </p>
+    <input type="submit" value="send" />
+
+  </form>
+</body>
+
+</html>

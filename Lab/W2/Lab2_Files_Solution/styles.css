@@ -1,0 +1,19 @@
+header{    
+background-color: lightblue;
+padding: 60px;
+text-align: center; 
+  
+  
+}
+
+ 
+footer{    
+background-color: lightblue;
+position: fixed;
+left:auto;
+bottom: 0;
+width: 100%;
+text-align: center;
+    
+}
+
