@@ -1,0 +1,56 @@
+<h2>Things to Do at an Airport </h2>
+	       <ol>
+                <li>Arrive by taxi</li>
+               <li>Check in at the airline counter</li>
+               <li>Go through security</li>
+               <li>Find the departure gate</li>
+               <li>Buy a newspaper to read</li>
+               <li>Board the plane</li>
+               <li>Take off</li>
+            </ol>
+------------------------
+			<h2>First-Aid Supplies</h2>
+            <h2>Don't forget to pack these when adventuring:</h2>
+            <ul type="square">
+                <li>Band-Aids</li>
+                <li>Bandage</li>
+                <li>Shark repellent</li>
+                <li>Aspirin</li>
+                <li>Snake-bite kit</li>
+                <li>Tweezers</li>
+                <li>Needle and thread</li>
+            </ul>
+---------------------------
+        <h2>What's in a Bag?</h2>
+            <dl>
+                <dt>Backpack</dt>
+	           <dd>A bag for carrying hiking supplies and lunch</dd>
+                <dt>Fannypack</dt>
+	               <dd>A bag for carrying a passport, wallet, and camera</dd>
+                <dt>Suitcase</dt>
+	               <dd>A bag for carrying clothes and toiletries</dd>
+                <dt>Briefcase</dt>
+	           <dd>A bag for carrying business documents, files, and pens</dd>
+</dl>
+-----------------------
+        <h2>How to be Safe on your trip</h2>
+        <ul>
+        <li>Be aware of the main areas.</li>
+            <li>Ensure you have emergency contact numbers.</li>
+            <li>Keep a photocopy of your documents in a safe place.</li>
+            <li>Know what the sport is about.</li>
+            <li>Take your travel light.</li>
+            <li>Do your medical check-up before your trip</li>
+        </ul>
+-----------------
+        <h2>Be a Smart Traveller</h2>
+        <ul>
+            <li>Research your destination</li>
+            <li>Cover yourself with travel insurance</li>
+            <li>Organise your travel money</li>
+            <li>Vaccinations</li>
+            <li>Be conscious of your safety and security</li>
+            <li>Obey the law</li>
+        </ul>
+-------------------
+

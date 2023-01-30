@@ -1,0 +1,167 @@
+*{
+margin: 0 auto 0 auto; /* set margin */
+text-align:left; /* set text alignment to left justified */
+}
+body{
+margin:0; /* no margin space */
+padding:0; /* no padding space */
+text-align:left; /* text align to left justify */
+font-size:13px; /* set font size 13 pixel */
+font-family:arial,helvetica, sens-serif; /*set font family */
+color:#000000; /*make text color black */
+background-color:#1c478e; /* make background colour match with
+background image */
+background-image:url(../images/background.png); /*set background
+image */
+background-repeat:repeat-x; /* repeat horizontally background image
+*/
+}
+#container{
+width:960px; /* set width of container to 960pixel */
+overflow:auto; /* when content overflow it is clipped */
+}
+/* set width same as container and height as 85 pixel */
+header{
+width:960px;
+height:85px;
+}
+/* set width, height, float, diplay properties of the menu */
+nav#menu{
+display:block;
+float:left;
+clear:both;
+width:960px;
+height:54px;
+}
+/* set unorder list as follows */
+nav#menu ul{
+list-style:none; /* no bullets */
+padding:0; /* no padding space */
+padding-top:18px; /*set top padding */
+margin-left:auto; /* set left margin auto */
+width:960px; /* set width same as container */
+}
+/* set list items styles as follow */
+nav#menu li{
+list-style:none; /* no bullets */
+padding:0; /* no padding space */
+display:inline; /* make menu items horizontal */
+}
+/* when user move mouse over the menu items change its color */
+nav#menu li a:hover{
+color:#fdfdfd;
+}
+/* set links with following styles*/
+nav#menu li a,#menu li a:visited{
+float:left; /* float it left */
+color:#c3c3c3; /* change text colour */
+text-decoration:none; /* no underline */
+text-align:center; /* justify to center */
+font-size:15px; /* set font size and make it bold */
+font-weight:bold;
+padding:0 13px 0 13px; /* set some space between menu items */
+}
+/* set styles for the leftmenu as follow */
+nav#leftmenu{
+margin-top:15px; /* set top margin */
+width:190px; /* set width and height */
+height:auto;
+float:left; /* float the menu left side of window */
+background:#1C478E; /* set background colour */
+border-radius:10px; /* make rounder corner border */
+padding: 15px 20px 10px 10px; /* set spacing */
+}
+/* remove styling and padding form unordered list */
+nav#leftmenu ul{
+list-style:none;
+padding:0;
+}
+/* set menu items styles as follow */
+nav#leftmenu li{
+list-style:none; /* no bullets */
+padding:15px 0 8px 0; /* set spacing */
+border-bottom:1px dashed #fff; /* draw a border line bellow each menu
+items */
+}
+/* set colour and font decorations for each link */
+nav#leftmenu a,nav#leftmenu a:visited{
+color:#ffffff;
+text-decoration:none;
+font-weight:bold;
+font-size:14px;
+}
+/* set heading3 color space and font decoration */
+nav#leftmenu h3{
+color:#ffffff;
+padding:0;
+padding-top: 20px;
+padding-bottom:8px;
+border-bottom:#fff solid 2px;
+font-size:16px;
+}
+/* set heading 4 colour, space, font decorations */
+nav#leftmenu h4{
+color:#ffffff;
+padding:0;
+padding-top: 20px;
+padding-bottom:8px;
+font-size:16px;
+}
+section{
+display:block;
+width:680px;
+margin-top:15px;
+float:left;
+background:#ffffff;
+border-radius:10px;
+border:6px solid #1C478E;
+padding:15px;
+margin-left:15px; 
+}
+.float{
+float:right;
+margin:15px;
+}
+h3{
+font-size:16px;
+font-weight:bold;
+padding:10px 0;
+color:#054dbc;
+}
+h4{
+font-size:15px;
+font-weight:bold;
+padding-bottom:7px;
+color:#054dbc;
+}
+p{
+margin:10px 0;
+}
+/* set the width of each offer division and make them float to right */
+.offer{
+width:170px;
+float:right;
+}
+/* set unordered list as no bullets, spacing and make bottom margin 10 pixel */
+.offer ul{
+margin-bottom:10px;
+list-style:none;
+padding:0;
+}
+/* for each list items set the height and remove the bullets */
+.offer li{
+list-style:none;
+line-height:1.7em;
+}
+footer{
+clear:both; /* clear previous float on left , right */
+width:100%;
+/* set text and background colour */
+background:#000;
+color:#fff;
+height:30px; /* set height of footer */
+text-align:center; /* make text to center justify */
+/* set margin and padding space */
+margin-top:20px;
+padding-top:15px;
+}

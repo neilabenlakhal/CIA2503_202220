@@ -1,0 +1,116 @@
+
+  <tr>
+      <td>Snorkeling</td>
+      <td>Norman Reef Australia<br>
+         <a href="toBeDeveloped.html"><img src="images/Snorkeling1.jpg"></a> 
+      </td>
+      <td>20 Feb 2016</td>
+      <td>Dhs. 12000</td>
+      <td>12 Seats</td>
+  </tr>
+
+  <tr>
+      <td>Snorkeling</td>
+      <td> Raja Ampat Indonesia<br>
+          <a href="toBeDeveloped.html"><img src="images/Snorkeling2.jpg"></a></td>
+      <td>30 Jan 2016</td>
+      <td>Dhs 7000</td>
+      <td>20 Seats</td>
+  </tr>
+
+  <tr>
+      <td>Scuba Diving</td>
+      <td>Maaya Thila, Maldives<br>
+          <a href="toBeDeveloped.html"> <img src="images/Scuba1.jpg"></a>
+      </td>
+      <td>12 Feb 2016</td>
+      <td>Dhs. 10000</td>
+      <td>12 Seats</td>
+  </tr>
+
+  <tr>
+      <td>Scuba Diving</td>
+      <td>Martini Rock, Fujairah, UAE<br>
+          <a href="toBeDeveloped.html">  <img src="images/Scuba2.jpg"></a></td>
+      <td>10 Jan 2016</td>
+      <td>Dhs 3000</td>
+      <td>20 Seats</td>
+  </tr>
+———————————————
+
+<tr>
+      <th>Activity Type</th>
+      <th>Location (Click on image for Details)</th>
+      <th>Date</th>
+      <th>Cost</th>
+      <th>Availability</th>
+  </tr>
+  <tr>
+      <td>Rock Climbing</td>
+      <td>Machu Picchu Peru<br>
+          <a href="toBeDeveloped.html">  <img src="images/rock1.jpg"></a>
+      </td>
+      <td>25 Feb 2016</td>
+      <td>Dhs. 25000</td>
+      <td>6 Seats</td>
+  </tr>
+  <tr>
+      <td>Rock Climbing</td>
+      <td>Himalayan India<br>
+          <a href="toBeDeveloped.html">  <img src="images/rock2.jpg"></a></td>
+      <td>10 Feb 2016</td>
+      <td>Dhs 10000</td>
+      <td>15 Seats</td>
+  </tr>
+  <tr>
+      <td>Mountain eering</td>
+      <td>Kilimanjaro Tanzania<br>
+          <a href="toBeDeveloped.html"> <img src="images/Mountaineering1.jpg"></a>
+      </td>
+      <td>17 Feb 2016</td>
+      <td>Dhs. 18000</td>
+      <td>10 Seats</td>
+  </tr>
+  <tr>
+      <td>Mountain eering</td>
+      <td>Aconcagua Argentina<br>
+          <a href="toBeDeveloped.html"> <img src="images/Mountaineering2.jpg"></a></td>
+      <td>10 Jan 2016</td>
+      <td>Dhs 23000</td>
+      <td>8 Seats</td>
+  </tr>
+———————————————
+<tr>
+      <td>Skiing</td>
+      <td>Zermatt switzerland<br>
+          <a href="toBeDeveloped.html"> <img src="images/Skiing1.jpg"></a>
+      </td>
+      <td>20 Feb 2016</td>
+      <td>Dhs. 25000</td>
+      <td>10 Seats</td>
+  </tr>
+  <tr>
+      <td>Skiing</td>
+      <td>Revelstoke canada<br>
+          <a href="toBeDeveloped.html">  <img src="images/Skiing2.jpg"></a></td>
+      <td>30 Feb 2016</td>
+      <td>Dhs 19000</td>
+      <td>11 Seats</td>
+  </tr>
+  <tr>
+      <td>Snow boarding</td>
+      <td> NISEKO Japan<br>
+          <a href="toBeDeveloped.html">  <img src="images/Snowboarding1.jpg"></a>
+      </td>
+      <td>28 Feb 2016</td>
+      <td>Dhs. 16000</td>
+      <td>3 Seats</td>
+  </tr>
+  <tr>
+      <td>Snow boarding</td>
+      <td>Davos Switzerland<br>
+          <a href="toBeDeveloped.html"> <img src="images/Snowboarding2.jpg"></a></td>
+      <td>23 Jan 2016</td>
+      <td>Dhs 26000</td>
+      <td>9 Seats</td>
+  </tr>
