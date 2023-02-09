@@ -1,0 +1,27 @@
+<!-- Create a JavaScript program which will present a message if 
+    the text is selected as shown below.  Use the event called “onselect”. 
+     When the user selects the piece of text in the text box, an event will be triggered/handled 
+    which will then call a function which will print out a message to the screen.   -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function myFunction() {
+
+            document.getElementById("demo").innerHTML = "You selected some text";
+
+        }
+    </script>
+</head>
+
+<body>
+
+    Some text: <input type="text" value="Hello world!" onselect="myFunction()">
+
+    <p id="demo"></p>
+
+</body>
+
+</html>

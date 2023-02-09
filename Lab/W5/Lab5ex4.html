@@ -1,0 +1,23 @@
+<!-- Complete the html program which will display your name after clicking the button as shown. 
+    A prompt box should allow the user to enter his/her name. 
+     Fill in the missing code which makes use of an event.  -->
+
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h3>Click the button to enter and display your name</h3>
+    <button onclick="showName()">Click to enter and display your name</button>
+    <script>
+
+        function showName() {
+
+            var name = window.prompt("Enter your name");
+            document.getElementById("demo").innerHTML = name;
+        }
+    </script>
+    <p id="demo"></p>
+
+</body>
+
+</html>

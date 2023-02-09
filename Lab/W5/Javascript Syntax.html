@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id= "myDiv"></p>
+
+<script>
+
+/* Window.alert()
+The window.alert method is used to display an alert box in your browser. 
+It takes a string as an argument and displays it in the alert box.
+ */
+
+ window.alert("Hello, World!");
+
+ /* document innerHTML
+The innerHTML property is used to get or set the HTML content of an element. 
+You can use this property to dynamically change the content of an HTML element.
+
+For example: */
+
+let element = document.getElementById("myDiv");
+element.innerHTML = "Hello, World!";
+
+/* Variables:
+In JavaScript, variables are declared using the var, let, or const keywords. 
+The syntax for declaring a variable is: 
+
+var variableName = value;
+let variableName = value;
+const variableName= value;
+
+ var is function scoped and its value can be changed after it is declared. 
+
+let is block scoped and also allows you to change its value, 
+but you can't declare a let variable with the same name in the same scope. 
+const is also block scoped, but its value cannot be changed after it is declared.
+
+
+ */
+ //const no = 10;
+//onsole.log(no);  // outputs 10
+
+//no = 20;
+//console.log(no);  // results in a "TypeError: Assignment to constant variable."
+
+//const no = 30;
+//console.log(no);  // results in a "SyntaxError: Identifier 'no' has already been declared"
+
+
+
+ var v = 10;
+console.log(v);  // outputs 10
+
+v = 20;
+console.log(v);  // outputs 20
+
+var v = 30;
+console.log(v);  // outputs 30
+
+
+//let l = 10;
+//console.log(l);  // outputs 10
+
+l = 20;
+//console.log(l);  // outputs 20
+
+//let l = 30;
+//console.log(l);  // results in a "SyntaxError: Identifier 'l' has already been declared"
+
+
+
+
+var a=3.7;
+var b=2;
+
+var c = 10;
+let d = 20;
+const e = 30;
+
+console.log(a*b);   
+document.write(a*b);
+
+/* Control statements are used to make decisions based on conditions in your code. 
+The two most commonly used control statements in JavaScript are if...else and switch.
+ */
+
+    let f = 10;
+    if (f > 5) {
+        console.log("f is greater than 5");
+    } else {
+        console.log("f is not greater than 5");
+    }
+
+    let x = 10;
+        switch (x) {
+            case 10:
+                console.log("x is 10");
+                break;
+            case 20:
+                console.log("x is 20");
+                break;
+            default:
+                console.log("x is not 10 or 20");
+        }
+
+/*  Loops are used to repeat a block of code a certain number of times. 
+The two most commonly used loops in JavaScript are for and while loops.
+ */
+
+ for (let i = 0; i < 3; i++) {
+  console.log(i);
+}
+
+console.log("let's test while")
+let i = 0;
+while (i < 2) {
+  console.log(i);
+  i++;
+}
+
+/* An array is a collection of elements that can be of different data types,
+ including numbers, strings, and objects. 
+ To create an array, you use square brackets and separate the elements with commas.
+ */
+
+ let table = [1, 2, 3, 4, 5];
+console.log(table[2]); // Output: 3
+table[2] = "four"; //String
+console.log(table[2]);
+
+/* Date Objects
+JavaScript has a built-in Date object that can be used to work with dates and times.
+ To create a new Date object, you use the new keyword followed by the Date constructor.
+ */
+
+ let today = new Date();
+console.log(today); 
+
+var dd=225;
+console.log(Math.sqrt(dd));
+
+var a=3.7;
+var b=2;
+a=ciel(a)
+console.log(a*b);
+
+
+</script>
+</body>
+</html>

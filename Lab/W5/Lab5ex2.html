@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<!--   Write a JavaScript program to calculate the product of two 
+  numbers and then return and display the result.  
+  You program should call a function which will multiply the two numbers together before
+   returning a result.
+    The function should receive 2 parameter values
+ -->
+<head>
+  <meta charset="utf-8">
+  <title>Lab5</title>
+
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="script.js"></script>
+  <script>
+    var startProgram = function () {
+      var x = 55.5;
+      var y = 40.8;
+      var multiply = calProduct(x, y);
+      document.getElementById("paragraph1").innerHTML = multiply;
+    } //end start program function 
+
+    function calProduct(a, b) {
+      var result = a*b;
+      return result;
+    }
+  </script>
+</head>
+<body onLoad="startProgram();">JavaScript Calculator<BR>
+  <p id="paragraph1">
+    This content will be replaced.
+</body>
+</html>
