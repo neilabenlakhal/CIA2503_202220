@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<!--  Test the code from the Chapter 6 Lecture as seen below 
+    to change the content (innerHTML) of the HTML elements. 
+     The heading will be altered by accessing 
+     the innerHTML for element (id = “header”) in the Document. -->
+
+    <h1 id="header">Old Header</h1>
+    
+    <script>
+    var element=document.getElementById("header");
+        element.innerHTML="new Header";
+    </script>
+    
+        <p>"Old Header" was changed to "New Header"</p>
+    </body>
+    </html>

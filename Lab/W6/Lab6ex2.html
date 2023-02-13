@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<!--  Test the code from the Chapter 6 Lecture as seen 
+    below to change the content (innerHTML) of the HTML 
+    elements by appending content to the HTML document body.. -->
+<script>
+    var startProgram = function () {
+        var htmlOutput = "";
+        //appending a paragrpah at the end of the main document body
+        var paragraph2 = document.createElement("p");
+        paragraph2.setAttribute('id', 'paragraph2');
+        document.body.appendChild(paragraph2);
+        htmlOutput = "This is a paragraphe 2 content";
+        paragraph2.innerHTML = htmlOutput;
+
+        //Appending a list at the end of the main document body
+
+        var list = document.createElement("ul");
+        list.setAttribute("id", "list1");
+        document.body.appendChild(list);
+        htmlOutput = "";
+        htmlOutput += "<li> List item 1</li>";
+        htmlOutput += "<li> List item 1</li>";
+        htmlOutput += "<li> List item 1</li>";
+        list.innerHTML = htmlOutput;
+    }
+</script>
+</head>
+
+<body onLoad="startProgram();">
+    Adding HTML elements with JAVASCRIPT code<BR>
+    <p id="paragraph1">
+        This content will be replaced.
+</body>
+
+</html>
