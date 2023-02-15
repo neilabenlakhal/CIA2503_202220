@@ -3,12 +3,40 @@
 <!--  Use the DOM to alter the CSS style of the HTML elements using JavaScript.  Check the difference in the style for the “p2” element which has been updated dynamically. Element “p1” will remain unchanged. Test the code from the Chapter 6 Lecture as shown below. -->
 
 <p id="p1">Hello World!</p>
-<p id="p2">Hello World!</p>
+<p id="p2"  style = "color:blue; 
+font-family: 'Times New Roman', Times, serif; font-size: larger;">Hello World!</p>
+<img id="image" src="smiley.gif"/>
+
+<button id="demo"  onclick="myFunction();">Click me1</button>
+
+
+
+
+
 
 <script>
-    document.getElementById("p2").style.color = "blue";
-    document.getElementById("p2").style.fontFamily = "Arial";
-    document.getElementById("p2").style.fontSize = "larger";
+
+document.getElementById("demo").addEventListener("click", myFunction);
+
+
+
+
+
+
+    document.getElementById("p1").style.color = "blue";
+   document.getElementById("p1").style.fontFamily = "Arial";
+   document.getElementById("p1").style.fontSize = "larger";
+
+   
+
+document.getElementById("image").src= "pic_mountain.jpg";
+
+
+
+
+
+
+
 
 </script>
 

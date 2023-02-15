@@ -20,10 +20,26 @@
         document.body.appendChild(list);
         htmlOutput = "";
         htmlOutput += "<li> List item 1</li>";
-        htmlOutput += "<li> List item 1</li>";
-        htmlOutput += "<li> List item 1</li>";
+        htmlOutput += "<li> List item 2</li>";
+        htmlOutput += "<li> List item 3</li>";
         list.innerHTML = htmlOutput;
-    }
+
+
+        //appending a table 
+/*<table id="table" border='1'>
+<tr><td>1</td><td>2</td><td>3</td> </tr>
+<tr><td>4</td><td>5</td><td>6</td> </tr>
+</table>*/
+
+var table = document.createElement("table");
+table.setAttribute("id", "table");
+table.setAttribute("border", "1");
+htmlOutput = "";
+htmlOutput +="<tr><td>1</td><td>2</td><td>3</td></tr><tr><td>4</td><td>5</td><td>6</td></tr>";
+table.innerHTML=htmlOutput;
+document.body.appendChild(table);   
+   
+   }
 </script>
 </head>
 

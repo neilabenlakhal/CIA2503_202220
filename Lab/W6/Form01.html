@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <head>
+        <style>
+            form {
+                width: 400px;
+                margin: auto;
+                font-family: Arial, sans-serif;
+                padding: 20px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+
+            label {
+                display: block;
+                margin-bottom: 10px;
+                font-weight: bold;
+            }
+
+            input[type="text"],
+            input[type="email"],
+            input[type="password"],
+            input[type="tel"],
+            input[type="url"] {
+                display: block;
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 20px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                box-sizing: border-box;
+                font-size: 16px;
+            }
+
+            input[type="radio"] {
+                margin-right: 10px;
+            }
+
+            button[type="submit"] {
+                background-color: #4CAF50;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 16px;
+            }
+
+            button[type="submit"]:hover {
+                background-color: #3e8e41;
+            }
+        </style>
+
+        <script>
+            function validateForm() {
+
+                /*     In this example, we define a single function 
+                validateForm that is called when the submit button is clicked. 
+                The function retrieves the name and email input elements and their values,
+                 and performs the validation using simple if-else statements.
+                 */
+
+                /* If the name input is invalid, the function displays an alert message, 
+                clears the input value, and returns false to cancel the form submission. 
+                Similarly, if the email input is invalid, the function displays an alert message, 
+                clears the input value, and returns false to cancel the form submission.
+               If both input fields are valid, the function returns true to allow the form submission. 
+                */
+              const nameInput = document.getElementById('name');
+             const emailInput = document.getElementById('email');
+               const name = nameInput.value.trim();  
+
+                //the trim() method  remove whitespace characters from the beginning and end of a string.
+                const email = emailInput.value.trim();
+
+                if (name.length < 2 || name.length > 30) {
+                    alert('Please enter a name between 2 and 30 characters');
+                    nameInput.value = ''; // clear the input value
+                    return false; // cancel form submission
+                }
+
+                if (!email.includes('@') || !email.includes('.')) {
+                    alert('Please enter a valid email address');
+                    emailInput.value = '';
+                    return false; // cancel form submission
+                }
+
+                return true; // allow form submission
+            }
+        </script>
+    </head>
+
+    <body>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"/>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"/>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"/>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone"/>
+
+            <label for="url">Website:</label>
+            <input type="url" id="url" name="url"/>
+
+            <label>Gender:</label>
+            <label for="male"><input type="radio" id="male" name="gender" value="male"> Male</label>
+            <label for="female"><input type="radio" id="female" name="gender" value="female"> Female</label>
+
+            <button type="submit" onclick="validateForm()">Submit</button>
+        </form>
+    </body>
+
+</html>

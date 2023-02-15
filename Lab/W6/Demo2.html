@@ -1,0 +1,116 @@
+<!-- JavaScript Document Methods
+-----------------------------------------------    
+The DOM Document object represents the web page that is currently loaded in the browser. 
+The Document object contains various methods that allow you 
+to manipulate the content and structure of the web page.
+
+getElementById(id) - returns a reference to the first element with the specified ID.
+getElementsByClassName(class) - returns a collection of elements with the specified class name.
+getElementsByTagName(tagName) - returns a collection of elements with the specified tag name.
+createElement(tagName) - creates a new HTML element with the specified tag name.
+appendChild(node) - appends a new child node to an element.
+setAttribute(name, value) - sets the value of an attribute on an element.
+. -->
+
+<!-- JavaScript Window Methods
+-----------------------------------------------
+The Window object represents the current window or tab in the browser. 
+The Window object contains various methods that allow you to manipulate the behavior and appearance of the window.
+
+alert(message) - displays an alert box with the specified message.
+confirm(message) - displays a dialog box with a message and OK and Cancel buttons.
+prompt(message, default) - displays a dialog box with a message, an input field, and OK and Cancel buttons.
+ -->
+
+<!-- JavaScript Events
+Events are actions or occurrences that happen in the browser, 
+such as a user clicking a button, a web page finishing loading,
+ or an input field being changed. JavaScript allows you to attach event listeners
+  to elements on a web page so that you can respond to these events.
+
+click - triggered when an element is clicked.
+change - triggered when the value of an input field is changed.
+submit - triggered when a form is submitted.
+load - triggered when a web page finishes loading.
+mouseover - triggered when the mouse pointer is moved over an element. -->
+
+<!-- JavaScript Functions
+--------------------------------------------------------------------------------------------    
+Functions are blocks of code that perform a specific task. 
+JavaScript allows you to define your own functions and call them as needed.
+
+function functionName(parameters) - defines a new function with the specified name and parameters.
+return value - returns a value from a function.
+callFunction() - calls a function with no arguments.
+callFunctionWithArguments(argument1, argument2) - calls a function with the specified arguments. -->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Web Page</title>
+    <script>
+        function myFunction() {
+            var i =1;
+            i ="one";
+            var element = document.getElementById("myElement");
+            element.innerHTML = "Hello, world!";
+        }
+    </script>
+</head>
+
+<body>
+    <h1>My Web Page</h1>
+    <p id="myElement">Click the button to change this text.</p>
+    <button onclick="myFunction()">Click me</button>
+
+    <h1>Using document.write example</h1>
+
+    <script>
+        // set the size of the multiplication table
+        var size = 3;
+
+        // start a new table
+        document.write("<table>");    //<table>
+
+        // iterate over the rows
+        for (var i = 1; i <= size; i++) {
+            document.write("<tr>");      //<tr>
+
+            // iterate over the columns
+            for (var j = 1; j <= size; j++) {
+                // compute the product of i and j
+                var product = i * j;     
+                // i=1, j=1 product= 1*1=1
+                //i=1, j=2  product= 1*2=2
+                //i=1 j=3 product= 3
+                // write the product as a table cell
+                document.write("<td>" + product + "</td>");  
+                //<td>1</td>
+                //<td>2</td>
+                //<td>3</td>
+            }
+
+            document.write("</tr>");
+            //</tr>
+        }
+
+        // close the table
+        document.write("</table>");
+
+        /*  In this example, we start by setting the size of the multiplication table to 10.
+        We then use a for loop to iterate over the rows of the table, and another for loop to
+         iterate over the columns. For each pair of row and column values, 
+         we compute the product and use document.write() to add a new table cell to the page.
+ 
+ At the end of the loops, we close the table with another call to document.write().
+  When you load this script in a web browser, you should see a 10x10 multiplication table displayed on the page.
+ 
+  */
+
+    </script>
+
+</body>
+
+</html>
