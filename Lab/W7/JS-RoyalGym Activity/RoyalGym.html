@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Royal GYM</title>
+</head>
+
+
+<body onLoad="packagePrice()">
+<form>
+<table width="536" height="103" border="1">
+ <tr align="center">
+ <td colspan="3"><h1> Royal GYM </h1></td>
+ </tr>
+ 
+ <tr height="20" >
+    <td width="153" align="right"><h5>Full Name</h5></td>
+   <p id="p1"><td width="208"><input type="text" id="name" required placeholder="type your name"> </td></p>
+    <td width="153"><p id="nameError"></p></td>
+  </tr>
+  
+ <tr >
+ 	<td align="right" ><h5>Packages</h5></td>
+    <td >
+      <select name="select" id="pType" onchange="packagePrice()" >
+        <option selected>PACKAGE A</option>
+        <option>PACKAGE B</option>
+        <option>PACKAGE C</option>
+        <option>PACKAGE D</option>
+		<option>PACKAGE VIP</option>
+		
+      
+      </select></td>
+    <td width="153" ><p id="pPrice"></p></td>
+ </tr>
+  <tr height="20" >
+    <td width="153" align="right"><h5>Number of Years</h5></td>
+   <p id="p1"><td width="208"><input type="number" id="year" required> </td></p>
+    <td width="153"><p id="yearError"></p></td>
+  </tr>
+  
+  <tr height="20" >
+    <td align="right"><h5>AGE</h5></td>
+    <td><input type="number" id="age" required></td>
+    <td  width="153"><p id="ageError"></p></td>
+  </tr>
+  
+  <tr>
+  <td width="153" align="right"><h5>Student</h5></td>
+  <td align="center">
+    <p>
+      <label>
+        <input type="radio" name="student" value="yes" id="yes">
+        YES</label>
+      
+      <label> <input type="radio" name="student" value="no" id="no"> NO</label>
+    </p></td>
+	<td width="153"><p id="studentError"></p></td>
+  </tr>
+  
+  <tr height="20" >
+    <td width="153" align="right"><h5>Mobile</h5></td>
+   <p id="p1"><td width="208"><input type="text" id="mobile" required"> </td></p>
+    <td width="153"><p id="mobileError"></p></td>
+  </tr>
+  
+  
+  <tr>
+  <td width="153" align="right"><h5>Gender</h5></td>
+  <td align="center">
+    <p>
+      <label>
+        <input type="radio" name="Gender" value="Male" id="male">
+        MALE</label>
+      
+      <label>
+        <input type="radio" name="Gender" value="Female" id="female">
+        FEMALE</label>
+      
+    </p></td>
+	<td width="153"><p id="genderError"></p></td>
+  </tr>
+  
+  
+  <tr height="20" align="center">
+    
+    <td colspan="3"><input type="button" onclick="finalAmount()" value="TOTAL COST" > <input type="reset"></td>
+    
+  </tr>
+  
+  <tr height="20" align="center">
+    
+    <td colspan="3"><h2> <p id="result"></p></h2></td>
+    
+  </tr>
+</table>
+
+</form>
+    
+   
+ <script src="gym-solution.js"> </script>
+</body>
+</html>
+

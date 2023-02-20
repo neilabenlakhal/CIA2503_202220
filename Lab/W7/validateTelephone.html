@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <script>
+
+/* A regular expression (also known as a regex) is a pattern that 
+describes a set of strings. It can be used to match, search, and replace text.
+
+In JavaScript, regular expressions are represented by the RegExp object. 
+There are two ways to create a RegExp object:
+
+Using a regular expression literal, which consists of a pattern enclosed in slashes:
+
+const regex = /pattern/;
+Creating a regular expression
+
+Let's start by creating a regular expression that matches the word "hello":
+*/ 
+
+//This regular expression matches the string "hello" anywhere in a text.
+
+var regex = /hello/;
+
+//Matching a string
+
+
+/*To test if a string matches a regular expression, we can use the test() method of the RegExp object. 
+This method returns true if the string matches the regular expression, and false otherwise:
+*/
+
+var text = 'hello world';
+var result = regex.test(text);
+
+console.log(result);
+text = "he";
+result = regex.test(text);
+console.log(result);
+
+
+/* Quantifiers
+
+Quantifiers are used to match multiple occurrences of a character or a group of characters.
+ The most common quantifiers are:
+
+*: matches zero or more occurrences
++: matches one or more occurrences
+?: matches zero or one occurrence
+{n}: matches exactly n occurrences
+{n,}: matches at least n occurrences
+{n,m}: matches between n and m occurences
+
+Matching Specific Characters
+To match specific characters, enclose them in square brackets ([]). 
+For example, to match either "cat" or "dog":
+
+*/
+var regex = /[a-z]og/;
+var str1 = "cat and dog";
+var str2 = "cog";
+var result1 = regex.test(str1);
+var result2 = regex.test(str2);
+console.log(result1); 
+console.log(result2); 
+
+
+
+        //declare regular expression
+        regutelephone = /^(02|04|06)[0-9]{6}$/;
+
+        function validateForm() {
+            let telephone = document.getElementById("telephone").value;
+            if ((regutelephone.test(telephone) == false)) {
+                alert("Only UAE Landline numbers are accepted.");
+                return false;
+            }
+            else {
+                alert("regular expression verified, you can proceed ..");
+                return true;
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>JavaScript Validation</h2>
+    <form name="myForm" action="/action_page.php" 
+    onsubmit="return validateForm()" 
+    method="post">
+        Telephone: <input type="text" id="telephone"/>
+        <input type="submit" value="Submit"/>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Vacation Booking App</title>
+<!-- a. Create a JavaScript file called StudentID_Ex3.js and link it with the HTML page provided. 
+b. In the JavaScript file, create a function Validate() that checks the following:
+The name entered should be at least 10 letters, spaces are allowed.
+Number of persons should be more than 10.
+Phone number should start with 05 or 06 or 07 followed by 6 more digits.
+User must select one of the two meal choices.
+Validation error messages should be displayed as shown in the snapshot below.
+In the JavaScript file, create a function makeBooking() that: 
+Calls the function called Validate () to check if all user inputs are valid.
+If all the user inputs are valid, the method will:
+Calculate the booking fee as follows: 
+The booking fee is AED 4500 if the number of persons is more than 20, 
+otherwise it is AED 6000.
+Display the booking fee as shown in the snapshot below.
+Otherwise, the method should display the error message “Please check the form for errors”
+c. Call the function makeBooking() when the user clicks on the button “Booking Fee”.  
+-->
+<script src="EX3.js"></script>
+</head>
+<body>
+  <form id="bookform">
+    <table width="700" height="103" border="2">
+      <tr align="center">
+        <td colspan="3">
+          <h1>RAKHolidays Group Tour Booking</h1>
+        </td>
+      </tr>
+      <tr height="20">
+        <td width="153" align="right">
+          <h5>Representative Full Name</h5>
+        </td>
+        <p id="p1">
+          <td width="208"><input type="text" id="fullname" name="fullname" required placeholder="Enter your full name">
+          </td>
+        </p>
+        <td width="153">
+          <p id="fnameError"></p>
+        </td>
+      </tr>
+      <tr height="20">
+        <td width="153" align="right">
+          <h5>Phone Number</h5>
+        </td>
+        <p id="p1">
+          <td width="208"><input type="text" id="phone" name="phone" required placeholder="Enter your phone number">
+          </td>
+        </p>
+        <td width="153">
+          <p id="phoneError"></p>
+        </td>
+      </tr>
+      <tr height="20">
+        <td width="153" align="right">
+          <h5>Number of Persons</h5>
+        </td>
+        <p id="p1">
+          <td width="208"><input type="text" id="numPersons" name="numPersons" required
+              placeholder="Enter number of persons"> </td>
+        </p>
+        <td width="153">
+          <p id="numPersonsError"></p>
+        </td>
+      </tr>
+      <tr>
+        <td width="153" align="right">
+          <h5>Meal Selection</h5>
+        </td>
+        <td align="center">
+          <p>
+            <label>
+              <input type="radio" name="Meal" value="Lunch" id="lunch">
+              LUNCH</label>
+
+            <label>
+              <input type="radio" name="Meal" value="Dinner" id="dinner">
+              DINNER</label>
+          </p>
+        </td>
+        <td width="153">
+          <p id="mealError"></p>
+        </td>
+      </tr>
+
+      <tr>
+        <td width="153" align="right">
+          <h5>Free Gift</h5>
+        </td>
+        <td align="center">
+          <p>
+            <label>
+              <input type="radio" name="Gift" value="Bag" id="bag"/>
+              BAG</label>
+
+            <label>
+              <input type="radio" name="Gift" value="Access" id="access"/>
+              ACCESSORIES</label>
+          </p>
+        </td>
+        <td width="153">
+          <p id="giftError"></p>
+        </td>
+      </tr>
+      <tr height="20" align="center">
+
+        <td colspan="3"><input type="button" onclick="makeBooking();" value="Booking Fee">
+          <input type="reset">
+        </td>
+      </tr>
+      <tr height="20" align="center">
+
+        <td colspan="3">
+          <h2>
+            <p id="result"></p>
+          </h2>
+        </td>
+      </tr>
+    </table>
+
+  </form>
+</body>
+
+</html>

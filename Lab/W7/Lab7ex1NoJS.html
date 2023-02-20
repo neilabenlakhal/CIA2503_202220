@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<!-- In this example, we are going to validate the name and password.
+The name can’t be empty and the password can’t be less than 6 characters long. 
+The data in the form will be validated on form submit. The user will not be 
+forwarded to the next stage until the given values are correct. 
+ -->
+<head>
+<!-- <script>
+function validate(){
+var num=document.myform.num.value;
+if (isNaN(num)){ //predefined function
+  document.getElementById("numloc").innerHTML=" Enter Numeric value only !!";
+  return false;
+}else{
+  return true;
+  }
+}
+</script> -->
+</head>
+<body>
+<form name="myform" action="/action_page.php" onsubmit="return validate()" />
+Number: <input type="number" name="num"/>
+<span id="numloc"></span><br/>
+<input type="submit" value="submit"/>
+</form>
+</body>
+</html>

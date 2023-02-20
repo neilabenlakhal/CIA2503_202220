@@ -1,0 +1,36 @@
+<html>
+<!-- In this example, we are going to validate the name and password.
+The name can’t be empty and the password can’t be less than 6 characters long. 
+The data in the form will be validated on form submit. The user will not be 
+forwarded to the next stage until the given values are correct. 
+ -->
+
+<body>
+    <script>
+        function validateform() {
+            var name = document.myform.myname.value; // local 
+            // var document.getElementById("myname").value;
+            document.getElementsByTagName("input")['1'].value;
+            
+            var password = document.myform.pass.value;
+            if ( name == "") { //null : predefined value type Null Number Float  String 
+                alert("Name can't be blank");
+                return false;
+            }
+            else if (password.length < 6) { // length is predefined 
+                alert("Password must be at least 6 characters long.");
+                return false;
+            }
+        }  
+    </script>
+
+
+    <body>
+        <form name="myform" method="post" action="" onsubmit="return validateform()" />
+        Name: <input type="text" name="myname" id="myname"  placeholder="Name here.."/><br />
+        Password: <input type="password" name="pass" id="password"/><br />
+        <input type="submit" value="register"/>
+        </form>
+    </body>
+
+</html>
