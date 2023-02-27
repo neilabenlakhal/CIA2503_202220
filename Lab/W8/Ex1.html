@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <!-- Basic syntax is: $(selector).action()
+    A $ sign to define/access jQuery
+    A (selector) to "query (or find)" HTML elements
+    A jQuery action() to be performed on the element(s) -->
+    <script>
+
+        $(document).ready(function () {
+            $("button.me").click(function () { //will hide the paragraph with me as a class in the document 
+                $("h1,h2,h3").hide();
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+
+    <h2>Use jQuery H2</h2>
+    <h1>Use jQuery H1</h2>
+    <h3>Use jQuery H3</h2>
+
+    <p>This is a paragraph</p>
+    <p>This is another paragraph</p>
+    <p>I hope you enjoy programming with jQuery</p>
+
+    <button class="me">Click Me</button>
+    <button>No me</button>
+
+</body>
+
+</html>

@@ -18,20 +18,30 @@ function makeBooking() {
 	document.getElementById("result").innerHTML = result;
 }
 
+/*
+	The name entered should be at least 10 letters, spaces are allowed.
+	Number of persons should be more than 10.
+	Phone number should start with 05 or 06 or 07 followed by 6 more digits.
+	User must select one of the two meal choices.
+*/
+
+
+
 function Validate() {
-	var fullname = document.getElementById("fullname").value;
+	var fullname = document.getElementById("fullname").value; //input type =text
 	var phone = document.getElementById("phone").value;
 	var numPersons = document.getElementById("numPersons").value;
 	var lunch = document.getElementById("lunch"); //radio button
 	var dinner = document.getElementById("dinner"); //radio button
 	var result = true; 
 
-	regname=/^[a-zA-Z ]{10,}$/;
+	regname=/^[a-zA-Z ]{10,}$/;   //pattern declaration 
 	if (regname.test(fullname) == false) {
 		document.getElementById("fnameError").innerHTML = "Must be at least 10 letters, spaces allowed";
 		result = false;
 		
 	}
+	
 	if (/^(05|06|07)[0-9]{6}$/.test(phone) == false) {
 		document.getElementById("phoneError").innerHTML = "Must start with 05 or 06 or 07 followed by 6 more digits";
 		result = false;
