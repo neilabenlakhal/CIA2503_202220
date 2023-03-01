@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+
+<!-- This code includes four different jQuery functions:
+
+On click of button with id btn1, change the text of the element with id text1 to "Hello World!"
+On hover of button with id btn2, change its background color to yellow
+On click of button with id btn3, append a new list item with text "New Item" to the list with id list1
+On click of any list item within the list with id list1, remove the clicked item from the list
+When the user clicks the buttons or interacts with the list, the jQuery functions are executed and the DOM is manipulated accordingly.
+ -->
+<head>
+    <title>jQuery Exercise</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Change text on button click
+            $("#btn1").click(function () {
+                $(this).text("Hello World!");   //same as innerHTML in DOM  
+                //this can be used instead of #btn1
+            });
+
+            // Change color on hover
+            $("#btn2").hover(function () {
+                $(this).css("background-color", "yellow"); }, function () {
+                $(this).css("background-color", "white");   
+                //in DOM we write document.getElementById("btn1").style.backgroundColor="white";
+            });
+
+            // Add new item on button click
+            $("#btn3").click(function () {
+                $("#list1").append("<li>New Item</li>");
+            });
+
+            // Remove item on click
+            $("#list1").on("click", "li", function () {
+                $(this).remove();
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <h2>jQuery Exercise</h2>
+
+    <button id="btn1">Change Text</button>
+    <button id="btn2">Change Color on Hover</button>
+    <button id="btn3">Add New Item</button>
+
+    <ul id="list1">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+</body>
+
+</html>

@@ -1,5 +1,31 @@
 <!DOCTYPE html>
 <html>
+<!-- 
+This is an HTML document that includes a script written in jQuery, a JavaScript library. 
+The jQuery script is used to
+add interactive behavior to the web page.
+
+The HTML document consists of several elements, including:
+
+Three input elements, two of which have a name attribute set to "fullname" and "email", respectively.
+Four paragraph elements, each with some text inside.
+Three button elements, each with a class attribute set to "btn1", "btn2", or "btn3".
+The jQuery script begins by setting up a "document ready" event handler. This means that when the document has finished
+loading, the code inside the handler will execute. Inside the handler, three click event handlers are set up for the
+three buttons. Each handler uses the "toggle" method to show or hide a different set of elements when the corresponding
+button is clicked:
+
+Button 1 (.btn1) toggles the visibility of all the paragraph elements on the page.
+Button 2 (.btn2) toggles the visibility of all the heading elements on the page.
+Button 3 (.btn3) toggles the visibility of the paragraph element with the id of "test".
+In addition to the click event handlers, two focus event handlers and two blur event handlers are set up for the two
+input elements. These handlers change the background color of the input element when it gains or loses focus.
+
+Overall, the script adds some interactivity to the page, allowing the user to toggle the visibility of certain elements
+and providing some visual feedback when the input elements are focused or blurred.
+
+ -->
+
 
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -33,6 +59,10 @@
     <br>Course Code: <input type="text" name="fullname">
     <br><br>
     Course Name: <input type="text" name="email"><br>
+    <!-- Email: <input type="email" name="email"><br>
+    choices:  <input type = "radio" name = "choice" value "1"/> Web     
+     <input type = "radio" name = "choice" value "2"/> Java -->
+
 
     <p>This is a paragraph.</p>
     <p>This is another paragraph.</p>

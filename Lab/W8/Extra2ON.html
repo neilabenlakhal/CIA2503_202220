@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<!-- The on() method is a powerful event handling function in jQuery that can be used
+ to attach an event handler function to one or more selected elements. 
+ The main advantage of on() over other event handler methods like click(), submit(), keydown(), etc.,
+  is that it allows you to attach event handlers to elements that are added to the page dynamically.
+
+  The syntax of the on() method is as follows:
+
+  
+  $(selector).on(event, childSelector, handler);
+
+  selector: Specifies the element(s) to which the event handler should be attached.
+  event: Specifies the event type(s) for which the handler is being attached.
+  childSelector: (optional) Specifies a child element that should trigger the event handler.
+  handler: The function to be executed when the event is triggered. -->
+
+
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#add-btn').click(function () {
+                $('#container').append('<button class="btn">New Button</button>');
+            });
+
+            $('#container').on('click', '.btn', function () {
+                alert($(this).text() + ' clicked!');
+            });
+        });
+
+    </script>
+    <!--  an example that uses the on() method to bind a click event to dynamically created elements: -->
+</head>
+
+<body>
+    <div id="container">
+        <button class="btn">Button 1</button>
+        <button class="btn">Button 2</button>
+        <button class="btn">Button 3</button>
+    </div>
+
+    <button id="add-btn">Add Button</button>
+</body>
+
+</html>
