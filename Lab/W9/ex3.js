@@ -27,8 +27,8 @@ $(document).ready(function () {
         alert("course code : " + $("#code").val() + "course name: " + $("#name").val());
 
         //$("#p1").text("hi");
-        $("#p1").text("Course Code entered: " + $("#code").val());
-        $("#p2").text("Course Name entered: " + $("#name").val());
+       // $("#p1").text("Course Code entered: " + $("#code").val());
+      //  $("#p2").text("Course Name entered: " + $("#name").val());
         
 
     });

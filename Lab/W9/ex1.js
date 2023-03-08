@@ -21,7 +21,7 @@ $(document).ready(function(){
     $(this).css("background-color", "lightgreen");
   });
   $(".btn4").click(function(){
-    alert ("paraghraph text : "+ $("#test").html());
+    alert ("paraghraph text : "+ $("#test").text());
   }); 
 
 });
